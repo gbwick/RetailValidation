@@ -17,7 +17,7 @@ if(document.getElementById("zipcode").value.length != 0) {
     if (validZipcode.includes(zipcodeInput.value))
         true; 
     else{
-        alert('Auto Rescue Solutions does not service your location.');
+        alert('Unfortunately, it looks like you are outside of our service location. We will not be able to service your vehicle today and hope you are able to get back on the road safely. ');
         document.getElementById('zipcode').style.borderColor = "red"; 
         notServiced.style.display = "block";
         zipPopUp.style.display = "flex";
@@ -28,7 +28,7 @@ if(document.getElementById("zipcode").value.length != 0) {
 
 if(document.getElementById("Vehicle-Make").value.length != 0) {
     if (validMake.includes(makeInput.value))
-        alert('Auto Rescue Solutions does not service vehicle.');
+        alert('Unfortunately, we do not service your vehicle. We will not be able to service your vehicle today and hope you are able to get back on the road safely.');
         document.getElementById('Vehicle-Make').style.borderColor = "red"; 
         noMake.style.display = "block";
         makePopUp.style.display = "flex";
